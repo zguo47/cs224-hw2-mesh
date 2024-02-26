@@ -55,6 +55,9 @@ int main(int argc, char *argv[])
 
     // Start timing
     auto t0 = std::chrono::high_resolution_clock::now();
+    m.storeHalfedge();
+    m.collapse(0);
+    m.validate(m);
 
     // Switch on method
     if (method == "subdivide") {
