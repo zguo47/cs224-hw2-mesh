@@ -20,7 +20,7 @@ Last, I make sure that there exist no zero area faces, in other words, the verti
 unique. 
 The above features a total of 17 assert statements.
 The below are the detailed implementation. 
-
+'''
 struct Halfedge {
     Halfedge *twin = nullptr;
     Halfedge *next = nullptr;
@@ -84,7 +84,7 @@ void Mesh::validate(const Mesh& meshDataStructure) {
         ASSERT_WITH_MESSAGE(f->face[0] != f->face[2], "Face has zero area");
     }
 }
-
+'''
 ### Collaboration/References
 N/A
 
