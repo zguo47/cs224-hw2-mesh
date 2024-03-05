@@ -22,21 +22,21 @@ Please do not attempt to duplicate the given reference images; we have tools to 
 
 | `.ini` File To Produce Output | Expected Output | Your Output |
 | :---------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: | 
-| subdivide_icosahedron_4.ini |  ![](ground_truth_pngs/final/subdivide_icosahedron_4.png) | ![Place screenshot of student_outputs/final/subdivide_icosahedron_4.obj here]() |
-| simplify_sphere_full.ini |  ![](ground_truth_pngs/final/simplify_sphere_full.png) | ![Place screenshot of student_outputs/final/simplify_sphere_full.obj here]() |
-| simplify_cow.ini | ![](ground_truth_pngs/final/simplify_cow.png) | ![Place screenshot of student_outputs/final/simplify_cow.obj here]() |
+| subdivide_icosahedron_4.ini |  ![](ground_truth_pngs/final/subdivide_icosahedron_4.png) | ![](student_pngs/subdivide.png) |
+| simplify_sphere_full.ini |  ![](ground_truth_pngs/final/simplify_sphere_full.png) | ![](student_pngs/simplify_sphere.png) |
+| simplify_cow.ini | ![](ground_truth_pngs/final/simplify_cow.png) | ![](student_pngs/simplify_cow.png) |
 
 Output for Isotropic Remeshing (Note: if you did not implement this you can just skip this part)
 | `.ini` File To Produce Output | Input Mesh .png | Remeshed Mesh .png |
 | :---------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: | 
-| <Path to your .ini file> |  ![Place screenshot of your input mesh here]() | ![Place screenshot of your remeshed mesh here]() |
+| <Path to your .ini file> |  ![](student_pngs/peter.png) | ![](student_pngs/remesh_peter.png) |
 
 
 
 Output for Bilateral Mesh Denoising (Note: if you did not implement this you can just skip this part)
 | `.ini` File To Produce Output | Noisy Mesh .png | Denoised Mesh .png |
 | :---------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: | 
-| <Path to your .ini file> |  ![Place screenshot of a noisy mesh here]() | ![Place screenshot of your denoised mesh here]() |
+| <Path to your .ini file> |  ![](student_pngs/noise_bunny.png) | ![](student_pngs/denoise_bunny.png) |
 
 
 
