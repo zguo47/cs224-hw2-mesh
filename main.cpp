@@ -56,29 +56,38 @@ int main(int argc, char *argv[])
     // Start timing
     auto t0 = std::chrono::high_resolution_clock::now();
     m.storeHalfedge();
-    m.collapse(0);
-    m.validate(m);
+
+    // m.validate(m);
 
     // Switch on method
     if (method == "subdivide") {
         int numIterations = settings.value("Parameters/args1").toInt();
-
+        m.subdivide(numIterations);
+        // m.validate(m);
         // TODO
 
     } else if (method == "simplify") {
-
+        int numTrianglesRemove = settings.value("Parameters/args1").toInt();
+        m.simplify(numTrianglesRemove);
+        // m.validate(m);
         // TODO
 
     } else if (method == "remesh") {
+        int numIter =  settings.value("Parameters/args1").toInt();
+        float smoothingweight = settings.value("Parameters/args2").toFloat();
 
+        m.remesh(smoothingweight, numIter);
         // TODO
 
     } else if (method == "noise") {
-
+        m.noise();
         // TODO
 
     } else if (method == "denoise") {
-
+        int numIter =  settings.value("Parameters/args1").toInt();
+        float sigma_s = settings.value("Parameters/args2").toFloat();
+        float sigma_c = settings.value("Parameters/args3").toFloat();
+        m.denoise(numIter, sigma_s, sigma_c);
         // TODO
 
     } else {
