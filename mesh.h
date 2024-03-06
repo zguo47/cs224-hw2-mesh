@@ -32,10 +32,6 @@ struct Face {
     Halfedge *halfedge = nullptr;
 };
 
-struct Edge {
-    Halfedge *firsthalfedge = nullptr;
-    Halfedge *secondhalfedge = nullptr;
-};
 
 struct HalfedgeErrorComparator {
     const std::map<Halfedge*, float>& errorMap;
@@ -55,7 +51,6 @@ public:
     std::vector<Vertex*> m_vertices;
     std::vector<Halfedge*> m_halfedges;
     std::vector<Face*> m_faces;
-    std::vector<Edge*> m_edges;
     std::map<Vertex*, int> vertexHalfedgeCount;
 
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
